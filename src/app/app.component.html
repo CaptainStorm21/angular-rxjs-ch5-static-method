@@ -304,20 +304,17 @@
   </div>
   <div class="cards-container">
     <div class="input-stream">
-      <div class="input-stream__item" *ngFor="let item of combinedStreamData">
-        Title: {{item.title}}, Type: {{item.type}}
-      </div>
-    </div>
+      ...
     <div class="output-stream">
       <h6>Movies</h6>
-      <div class="input-stream__item" *ngFor="let item of outputStreamData">
-        {{item.title}}
+      <div class="input-stream__item" *ngFor="let movie       of movies">
+        {{movie}}
       </div>
     </div>
     <div class="output-stream">
       <h6>Cartoons</h6>
-      <div class="input-stream__item" *ngFor="let item of outputStreamData">
-        {{item.title}}
+      <div class="input-stream__item" *ngFor="let cartoon       of cartoons">
+        {{cartoon}}
       </div>
     </div>
   </div>
